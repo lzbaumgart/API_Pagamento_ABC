@@ -7,7 +7,7 @@ import { ApiProperty, ApiResponse } from '@nestjs/swagger';
 export class CieloController {
   constructor(private readonly cieloService: CieloService) {}
   @ApiProperty({
-    description: 'Atualiza cidades da tabela endereco.jmr_cidades',
+    description: 'Cadastra Pagamento.',
     type: PagamentoDto,
   })
   @ApiResponse({
