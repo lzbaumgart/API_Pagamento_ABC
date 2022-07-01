@@ -8,6 +8,7 @@ export class CieloController {
   constructor(private readonly cieloService: CieloService) {}
   @ApiProperty({
     description: 'Atualiza cidades da tabela endereco.jmr_cidades',
+    type: PagamentoDto,
   })
   @ApiResponse({
     status: 201,
