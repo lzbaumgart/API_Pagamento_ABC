@@ -12,6 +12,7 @@ export class PagamentoRepository {
   ) {}
 
   async insert(pagamento: PagamentoDto) {
-    return this.insert(pagamento);
+    const pgto = this.pagamentoRepository.create({ data: pagamento.data });
+    return this.pagamentoRepository.save(pgto);
   }
 }
