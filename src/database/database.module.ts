@@ -10,7 +10,7 @@ const entities = TypeOrmModule.forFeature([PagamentoEntity]);
       useFactory: () => {
         return {
           type: 'sqlite',
-          database: 'pagamentos',
+          database: 'pagamentos.sqlite',
           entities: [process.env.ENTITIES],
           synchronize: true,
         };
